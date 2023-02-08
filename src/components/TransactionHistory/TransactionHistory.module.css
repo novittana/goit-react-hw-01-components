@@ -1,0 +1,26 @@
+.transaction_history{
+    background-color: #fff;
+    width: 700px;
+    margin: 60px auto;
+    border: 1px solid #fff;
+    align-items: center;
+      font-size: 14px;
+}
+
+.thead{
+    background-color: #00bcd5;
+  
+}
+
+.item{
+    text-align: center;
+    width: calc(700px/3);
+    padding-top: 5px;
+    padding-bottom:5px;
+}
+
+.type{
+    composes:item;
+    padding-left: 70px;
+    text-align: left;
+}
