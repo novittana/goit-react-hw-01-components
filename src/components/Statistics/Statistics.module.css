@@ -21,11 +21,15 @@
 
 .stat_list{
     display: flex;
-   
 }
 
 .item{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    padding: 8px;
+}
+
+ .percentage {
+    display: flex;
+    margin-top: 8px;
 }
