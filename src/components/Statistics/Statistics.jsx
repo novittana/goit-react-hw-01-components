@@ -13,7 +13,7 @@ export function Statistics({ title = '', stats }) {
       </h2>
 
       <ul className={css.stat_list}>
-        {stats.map(({ id, label, percentage }) => (
+        {stats.map(({ id, label, percentage}) => (
           <li
             key={id}
             className={css.item}

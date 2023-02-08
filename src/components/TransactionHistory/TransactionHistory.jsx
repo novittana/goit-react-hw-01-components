@@ -12,9 +12,9 @@ export function TransactionHistory({ items }) {
         </tr>
       </thead>
       <tbody>
-        {items.map(({ id, type, amount, currency }) => {
+        {items.map(({ id, type, amount, currency},index) => {
           return (
-            <tr key={id} className={css.item}>
+            <tr key={id} className={index%2===0 ? css.item_pair : css.item}>
               <td className={css.type}>
                 {type.charAt(0).toUpperCase() + type.slice(1)}
               </td>

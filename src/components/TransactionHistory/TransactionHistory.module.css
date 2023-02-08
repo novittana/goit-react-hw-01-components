@@ -9,6 +9,7 @@
 
 .thead{
     background-color: #00bcd5;
+    color: #fff;
   
 }
 
@@ -17,6 +18,11 @@
     width: calc(700px/3);
     padding-top: 5px;
     padding-bottom:5px;
+}
+
+.item_pair{
+    composes:item;
+    background-color: #e4e5e6;
 }
 
 .type{
