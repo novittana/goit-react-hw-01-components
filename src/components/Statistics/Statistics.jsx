@@ -5,7 +5,6 @@ import {getRandomHexColor} from '../../utils/getRandomHexColor'
 
 
 export function Statistics({ title = '', stats }) {
-  
   return (
     <section className={css.statistics}>
       <h2 className={title ? css.title : css.title_none}>
@@ -18,7 +17,7 @@ export function Statistics({ title = '', stats }) {
           <li
             key={id}
             className={css.item}
-            style={{ backgroundColor: getRandomHexColor(),}}
+            style={{ backgroundColor: getRandomHexColor()}}
           >
             <span className={css.label}>{label}</span>
             <span className={css.percentage}>{percentage}%</span>
