@@ -15,10 +15,6 @@
     padding-bottom: 30px;
 }
 
-.title_none{
-    display: none;
-}
-
 .stat_list{
     display: flex;
     justify-content: space-around;

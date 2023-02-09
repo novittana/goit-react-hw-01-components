@@ -7,17 +7,14 @@ import {getRandomHexColor} from '../../utils/getRandomHexColor'
 export function Statistics({ title = '', stats }) {
   return (
     <section className={css.statistics}>
-      <h2 className={title ? css.title : css.title_none}>
-        {title.toUpperCase()}
-
-      </h2>
+      {title && (<h2 className={css.title}>{title.toUpperCase()}</h2>)}
 
       <ul className={css.stat_list}>
-        {stats.map(({ id, label, percentage}) => (
+        {stats.map(({ id, label, percentage }) => (
           <li
             key={id}
             className={css.item}
-            style={{ backgroundColor: getRandomHexColor()}}
+            style={{ backgroundColor: getRandomHexColor() }}
           >
             <span className={css.label}>{label}</span>
             <span className={css.percentage}>{percentage}%</span>
