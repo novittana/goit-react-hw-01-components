@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import css from './Statistics.module.css'
-import {getRandomHexColor} from '../../utils/getRandomHexColor'
+import {getRandomHexColor} from 'utils/getRandomHexColor'
 
 
 
